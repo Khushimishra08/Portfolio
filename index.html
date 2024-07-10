@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/476a7ff31d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/logo2.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CLOUD Student</p>
+            <h1>Hi,I'am <span>Khushi</span><br>Mishra</h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <img src="/About.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm studying for my MCA with a background in mathematics. The transition involves learning new programming languages and technical concepts, which can be challenging. I'm currently learning Java and web development. Balancing coursework and projects with personal life requires careful time management.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cloud Services</span><br>Compute, Storage, Networking, and AI/ML</li>
+                        <li><span>Web Development</span><br>Designing Web/App Development</li>
+                        <li><span>Java Development</span><br>Web, Mobile, Enterprise. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2024 - current</span><br>Working as a Java Developer</li>
+                        <li><span>During January - March2024</span><br>Zero Trust Cloud Security Virtual Internship</li>
+                        <li><span>During April - June2024</span><br>AI-ML Virtual Internship</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Masters of Computer Application with Industry Oriented Specialization in Cloud computing</li>
+                        <li><span>2023</span><br>Bsc(mathematics)</li>
+                        <li><span>2020</span><br>DCA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Cloud Services</h2>
+                <p>In cloud services, we can manage virtual machines, containers, serverless functions, and scalable storage solutions. Additionally, you can configure networking, optimize cloud networks, and implement AI and machine learning services for data analysis and application enhancement.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Development</h2>
+                <p>In web development, we can build responsive websites and web applications using HTML, CSS, and JavaScript, along with frameworks like React or Angular. You can also develop back-end services using Node.js, Python, or Java, and integrate databases for data storage and retrieval</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Java Development</h2>
+                <p>In Java development, we can create robust web applications using frameworks like Spring, build mobile apps for Android, and develop enterprise solutions with Java EE. You can also focus on desktop applications with JavaFX or Swing and explore microservices architecture with Spring cloud</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worl-list">
+            <div class="work">
+                <img src="/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The social media app with features like user profiles, news feeds, photo and video sharing, and messaging. The app will also include friend requests, notifications, and content discovery based on user interests.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The music app with features like music streaming, playlist creation, personalized recommendations, and offline playback. The app will also include user authentication, social sharing, and a powerful search functionality.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The online shopping app featuring product browsing, secure payment options, user reviews, and personalized recommendations. The app will also include user authentication, order tracking, and a seamless checkout process.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------contact------------>
+<div id="container">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> khushimishra082003@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9576294221</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/08_mishra/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/khushimishra2003"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="httpsps://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Khushimishra08"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="/khushimishra.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ is crime <i class="fa-solid fa-heart"></i> Made by Khushi</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby3iSBA-E31Q-tlbj4F90wLBi7C2daQKnUxBk8ypi5gORFeGRWFJ0keBUgIz8butWry/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+        
+    form.addEventListener('submit', e =>{
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
